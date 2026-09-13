@@ -55,7 +55,7 @@ The following diagram shows the VirtualBox network topology and the main service
 
 ### Diagram
 
-![AD Lab Architecture Diagram](images/architecture-diagram.png)
+![AD Lab Architecture Diagram](images/diagram.png)
 
 ## Infrastructure
 
