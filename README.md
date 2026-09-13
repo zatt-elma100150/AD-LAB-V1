@@ -1,8 +1,27 @@
 # 🌐 AD-LAB-V1
+![VirtualBox](https://img.shields.io/badge/VirtualBox-Virtualization-183A61?logo=virtualbox&logoColor=white)
+![Windows Server](https://img.shields.io/badge/Windows_Server-2022-0078D4?logo=windows&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Active_Directory-DS-blue?logo=microsoft&logoColor=white)
+![Windows 11](https://img.shields.io/badge/Windows_11-Client-0078D4?logo=windows11&logoColor=white)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-Client-E95420?logo=ubuntu&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 Personal Active Directory lab built with Oracle VirtualBox and Windows Server 2022.
 
 This project demonstrates the deployment and management of an Active Directory domain environment, including multiple domain controllers, a Read-Only Domain Controller, DNS, DHCP, Group Policy Objects and domain-joined clients (Windows & Linux).
 
+## Table of Contents
+
+- [Objectives](#objectives)
+- [Lab Environment](#lab-environment)
+- [Architecture](#architecture)
+- [Infrastructure](#infrastructure)
+- [Group Policy Objects](#group-policy-objects)
+- [Validation](#validation)
+- [Tech Stack](#tech-stack)
+- [Full Documentation](#full-documentation)
+- [Screenshots](#screenshots)
+- [Author](#author)
 
 ## Objectives
 
