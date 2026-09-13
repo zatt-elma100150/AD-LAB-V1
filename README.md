@@ -137,25 +137,25 @@ Selected screenshots from the lab environment. Detailed configuration screenshot
 
 ### VirtualBox Lab Environment
 
-![VirtualBox Lab Environment](./VB.png)
+![VirtualBox Lab Environment](images/VB.png)
 
 VirtualBox Manager displaying the domain controllers and domain-joined client machines used in the lab.
 
 ### Active Directory Users and Computers
 
-![Active Directory Users and Computers](./ADCU.png)
+![Active Directory Users and Computers](images/ADCU.png)
 
 Active Directory Users and Computers showing the domain controllers, including the Read-Only Domain Controller.
 
 ### Group Policy Management
 
-![Group Policy Management](./LAB01.png)
+![Group Policy Management](images/LAB01.png)
 
 Group Policy Management displaying the configured domain and security-related Group Policy Objects.
 
 ### Windows 11 Domain-Joined Client
 
-![Windows 11 Domain-Joined Client](./Win11.png)
+![Windows 11 Domain-Joined Client](images/Win11.png)
 
 Windows 11 domain-joined client displaying the corporate wallpaper applied through Group Policy.
 
