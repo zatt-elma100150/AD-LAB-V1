@@ -53,27 +53,37 @@ The main objectives of this project are:
 
 The following diagram shows the VirtualBox network topology and the main services deployed in the lab.
 
-### Mermaid Diagram
+### Diagram
 
 ```mermaid
 flowchart LR
-    Internet((Internet))
-    NAT[External Network<br/>NAT]
+    Internet((🌐 Internet))
+    NAT[🔀 External Network<br/>NAT]
 
-    DC01["DC01<br/>Windows Server 2022<br/>NIC 1: 192.168.56.10<br/>NIC 2: NAT<br/><br/>AD DS | DNS | DHCP | AD CS"]
-    DC02["DC02<br/>Windows Server 2022<br/>NIC 1: 192.168.56.30<br/>NIC 2: NAT<br/><br/>AD DS | DNS | DHCP"]
-    RODC["RODC01<br/>Windows Server 2022<br/>NIC 1: 192.168.56.20<br/><br/>RODC | DNS | PRP"]
-    Win11["Windows 11<br/>Domain-joined client<br/>192.168.56.100"]
-    Ubuntu["Ubuntu<br/>Linux client<br/>192.168.56.101"]
+    DC01["🖥️ DC01<br/>Windows Server 2022<br/>NIC 1: 192.168.56.10<br/>NIC 2: NAT<br/><br/>AD DS · DNS · DHCP · AD CS"]
+    DC02["🖥️ DC02<br/>Windows Server 2022<br/>NIC 1: 192.168.56.30<br/>NIC 2: NAT<br/><br/>AD DS · DNS · DHCP"]
+    RODC["🔒 RODC01<br/>Windows Server 2022<br/>NIC 1: 192.168.56.20<br/><br/>RODC · DNS · PRP"]
+    Win11["💻 Windows 11<br/>Domain-joined client<br/>192.168.56.100"]
+    Ubuntu["🐧 Ubuntu<br/>Linux client<br/>192.168.56.101"]
 
     Internet --> NAT
     NAT -->|NAT| DC01
     NAT -->|NAT| DC02
     DC01 -->|AD Replication| DC02
     DC01 -->|AD Replication| RODC
-    DC01 -.->|DHCP Failover<br/>Hot Standby| DC02
+    DC01 -.->|DHCP Failover Hot Standby| DC02
     DC01 --> Win11
     DC01 --> Ubuntu
+
+    classDef primary fill:#0078D4,stroke:#004578,stroke-width:2px,color:#fff
+    classDef secondary fill:#2E86AB,stroke:#1B4965,stroke-width:2px,color:#fff
+    classDef rodc fill:#6A4C93,stroke:#4A2E6B,stroke-width:2px,color:#fff
+    classDef client fill:#2D9C4A,stroke:#1B6B2E,stroke-width:2px,color:#fff
+
+    class DC01 primary
+    class DC02 secondary
+    class RODC rodc
+    class Win11,Ubuntu client
 ```
 
 ## Infrastructure
@@ -180,7 +190,7 @@ Windows 11 domain-joined client displaying the corporate wallpaper applied throu
 
 ## Author
 
-**M. El Majdoul**
+**M. El Majdoul** |
 IT Support / Sysadmin enthusiast — Active Directory & Infrastructure Lab
 
 🔗 [LinkedIn](https://www.linkedin.com/in/mohamed-e-4a7167146)
