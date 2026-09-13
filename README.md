@@ -183,7 +183,7 @@ Windows 11 domain-joined client displaying the corporate wallpaper applied throu
 **M. El Majdoul**
 IT Support / Sysadmin enthusiast — Active Directory & Infrastructure Lab
 
-🔗 [LinkedIn](www.linkedin.com/in/mohamed-e-4a7167146)
+🔗 [LinkedIn](https://www.linkedin.com/in/mohamed-e-4a7167146)
 
 ## License
 
