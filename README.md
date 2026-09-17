@@ -90,23 +90,23 @@ RODC01 is a Read-Only Domain Controller configured with:
 
 ## Group Policy Objects
 
-This lab includes 11 Group Policy Objects: 9 custom GPOs designed to enforce security, restrictions, and user experience standards + 2 default Active Directory GPOs.
+This lab includes nine custom GPOs and two default Active Directory policies. A Fine-Grained Password Policy was also configured separately for privileged accounts.
 
-| GPO Name | Scope (Linked OU) | Description |
+| GPO Name | Scope | Description |
 |---|---|---|
 | Advanced Auditing | LAB.local/Domain Controllers | Enables advanced security auditing on domain controllers, tracking logon events, account management, policy changes, and object access for compliance and incident investigation purposes. |
-| AppLocker | LAB.local/_USERS | Enforces application whitelisting through AppLocker, restricting execution of unauthorized software and reducing the attack surface across domain-joined workstations. |
-| BitLocker Recovery | LAB.local/Domain Controllers | Enforces AD DS-based recovery for BitLocker-protected drives, ensuring recovery passwords and key packages are backed up to Active Directory before encryption is permitted. |
+| AppLocker | LAB.local/_COMPUTERS | Enforces application whitelisting through AppLocker, restricting execution of unauthorized software and reducing the attack surface across domain-joined workstations. |
+| BitLocker Recovery | LAB.local/Domain Controllers | Stores BitLocker recovery information in Active Directory for the targeted domain controller computer objects, allowing authorized administrators to retrieve recovery data centrally. |
 | Control Panel Block | LAB.local/_USERS | Restricts standard users from accessing Control Panel and PC settings, preventing unauthorized changes to system configuration. |
-| Corporate Wallpaper | LAB.local/_USERS | Deploys a standardized desktop wallpaper via the NETLOGON share, applied to all authenticated users regardless of workstation, ensuring consistent corporate branding and preventing user-side modification. |
-| Folders Redirection | LAB.local/_USERS | Redirects user profile folders (Desktop, Documents) to a centralized network location, ensuring data persistence independent of the local machine. |
+| Corporate Wallpaper | LAB.local/_USERS | Applies a standardized desktop wallpaper through the NETLOGON share and prevents user-side modification. |
+| Folder Redirection | LAB.local/_USERS | Redirects user profile folders (Desktop, Documents) to a centralized network location, ensuring data persistence independent of the local machine. |
 | Map Network Drive | LAB.local/_USERS | Automatically maps a network drive at logon, providing users with consistent access to shared resources without manual configuration. |
 | Password Policies | LAB.local | Enforces domain-wide password complexity, minimum length, expiration, and account lockout thresholds to strengthen credential security. |
 | Restrict Software Installation | LAB.local/_USERS | Prevents standard users from installing unauthorized software, reducing the risk of malware introduction and maintaining endpoint compliance. |
 
 ### Default GPOs
 
-| GPO Name | Scope (Linked OU) | Description |
+| GPO Name | Scope | Description |
 |---|---|---|
 | Default Domain Policy | LAB.local | Baseline domain-wide policy automatically created by Active Directory, defining core password, lockout, and Kerberos authentication settings. |
 | Default Domain Controllers Policy | LAB.local/Domain Controllers | Baseline security policy automatically applied to domain controllers, governing user rights assignment and default audit behavior. |
