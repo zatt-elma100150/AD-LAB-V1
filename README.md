@@ -130,7 +130,7 @@ Windows Server 2022 · Windows 11 · Ubuntu · Active Directory Domain Services 
 
 Detailed configuration steps, screenshots, and validation results are available in the full project documentation:
 
-📄 
+📄 [Read the full Active Directory Lab documentation](./Active%20Directory%20Lab.pdf)
 
 ## Screenshots
 Selected screenshots from the lab environment. Detailed configuration screenshots and validation evidence are available in the full project documentation.
